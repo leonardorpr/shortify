@@ -1,11 +1,4 @@
 class UrlShortenerController < ApplicationController
-  get "/" do
-    unless params[:slug]
-      response = { message: "the slug parameter is missing" }
-      return response.to_json
-    end
-  end
-
   get "/:slug" do
     url_shortener = UrlShortener.find_by(slug: params[:slug])
     redirect to url_shortener[:real_url]

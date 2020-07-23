@@ -37,6 +37,8 @@ GEM
       coderay (~> 1.1)
       method_source (~> 1.0)
     rack (2.2.3)
+    rack-contrib (2.2.0)
+      rack (~> 2.0)
     rack-protection (2.0.8.1)
       rack
     rack-test (1.1.0)
@@ -77,6 +79,7 @@ DEPENDENCIES
   dotenv
   mongoid (~> 7.0)
   pry
+  rack-contrib
   rack-test
   require_all
   rspec

@@ -5,6 +5,7 @@ gem 'require_all'
 gem 'shotgun'
 gem 'pry'
 gem 'dotenv'
+gem 'rack-contrib'
 gem 'mongoid', '~> 7.0'
 
 group :test do

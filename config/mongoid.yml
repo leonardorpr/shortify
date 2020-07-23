@@ -1,0 +1,14 @@
+development:
+  clients:
+    default:
+      uri: <%= ENV['DB_ATLAS_URL'] %>
+
+test:
+  clients:
+    default:
+      uri: <%= ENV['DB_ATLAS_URL'] %>
+
+production:
+  clients:
+    default:
+      uri: <%= ENV['DB_ATLAS_URL'] %>

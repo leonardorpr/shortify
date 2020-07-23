@@ -9,3 +9,5 @@ services:
       - ".:/url-shortener"
     environment:
       - LANG=C.UTF-8
+    env_file:
+      - .env

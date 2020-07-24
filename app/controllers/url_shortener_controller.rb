@@ -12,7 +12,7 @@ class UrlShortenerController < ApplicationController
       url_shortener.to_json
     else
       response = { errors: url_shortener.errors.full_messages }
-      response.to_json
+      halt 400, response.to_json
     end
   end
 end
